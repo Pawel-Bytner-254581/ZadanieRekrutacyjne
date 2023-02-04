@@ -15,10 +15,15 @@
         <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
       </svg>
     </button>
+    <button class="close-btn">
+      <svg class="close-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+      </svg>
+    </button>
     
     <nav class="nav">
       <ul class="nav__items">
-        <li class="nav__item"><img src="./images/budway-logo.png" alt="logo firmy budway" loading="lazy"></li>
+        <li class="nav__item"><img src="./images/budway-logo.png" alt="logo firmy budway" width="160" height="175" loading="lazy"></li>
         <li class="nav__item">
           <a class="nav__link" href="./index.html">
             <svg class="nav__home-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="0 0 48 54" fill="none">
@@ -56,11 +61,44 @@
 
   <main class="main">
     <section class="section slider">
+      <div class="fixed-box">
+        <h1 class="fixed-box__heading">biuro projektów i nadzoru budowlanego</h1>
+        <img class="fixed-box__logo" src="./images/budway-logo-grid.png" alt="logo firmy budway" width="500" height="500" loading="lazy">
+        <img class="fixed-box__img" src="./images/slider-half-element.png" loading="lazy">
+        <div class="fixed-box__slider-dots">
+          <span class="fixed-box__slider-dot fixed-box__slider-dot--active"></span>
+          <span class="fixed-box__slider-dot"></span>
+          <span class="fixed-box__slider-dot"></span>
+        </div>
+      </div>
       <div class="slider__boxes">
-        <h1></h1>
-        <div class="slider__box"></div>
-        <div class="slider__box"></div>
-        <div class="slider__box"></div>
+        <div class="slider__box">
+          <img class="slider__img" src="./images/slide-img.png" alt="zdjęcie przedstawiające projekt wykonanego domu" width="1920" height="1080" loading="lazy">
+          <div class="slider__text-box">
+            <p class="slider__text">Projekt funkcjonalny, najlepzej jakości i odpowiadający na potrzeby klienta.<br />Zdecyduj się na współpracę z nami i wyróżnij swoją przestrzeń.</p>
+            <svg class="slider__scroll-down-arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="72" viewBox="0 0 48 72" fill="none">
+              <path d="M22.9395 71.5605L0.439487 49.0605C-0.146497 48.4746 -0.146497 47.5253 0.439487 46.9395C1.02547 46.3535 1.97469 46.3535 2.56053 46.9395L22.5 66.879L22.5 1.50005C22.5 0.670924 23.171 2.00504e-06 24.0001 2.07678e-06C24.8292 2.14853e-06 25.5001 0.670924 25.5001 1.50005L25.5001 66.879L45.4395 46.9395C46.0255 46.3535 46.9747 46.3535 47.5605 46.9395C47.8535 47.2324 48 47.6163 48 48.0001C48 48.3839 47.8535 48.7676 47.5605 49.0607L25.0605 71.5607C24.4747 72.1465 23.5255 72.1465 22.9395 71.5605Z" fill="black"/>
+            </svg>
+          </div>
+        </div>
+        <div class="slider__box">
+          <img class="slider__img" src="./images/slide-img.png" alt="zdjęcie przedstawiające projekt wykonanego domu" width="1920" height="1080" loading="lazy">
+          <div class="slider__text-box">
+            <p class="slider__text">Projekt funkcjonalny, najlepzej jakości i odpowiadający na potrzeby klienta.<br />Zdecyduj się na współpracę z nami i wyróżnij swoją przestrzeń.</p>
+            <svg class="slider__scroll-down-arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="72" viewBox="0 0 48 72" fill="none">
+              <path d="M22.9395 71.5605L0.439487 49.0605C-0.146497 48.4746 -0.146497 47.5253 0.439487 46.9395C1.02547 46.3535 1.97469 46.3535 2.56053 46.9395L22.5 66.879L22.5 1.50005C22.5 0.670924 23.171 2.00504e-06 24.0001 2.07678e-06C24.8292 2.14853e-06 25.5001 0.670924 25.5001 1.50005L25.5001 66.879L45.4395 46.9395C46.0255 46.3535 46.9747 46.3535 47.5605 46.9395C47.8535 47.2324 48 47.6163 48 48.0001C48 48.3839 47.8535 48.7676 47.5605 49.0607L25.0605 71.5607C24.4747 72.1465 23.5255 72.1465 22.9395 71.5605Z" fill="black"/>
+            </svg>
+          </div>
+        </div>
+        <div class="slider__box">
+          <img class="slider__img" src="./images/slide-img.png" alt="zdjęcie przedstawiające projekt wykonanego domu" width="1920" height="1080" loading="lazy">
+          <div class="slider__text-box">
+            <p class="slider__text">Projekt funkcjonalny, najlepzej jakości i odpowiadający na potrzeby klienta.<br />Zdecyduj się na współpracę z nami i wyróżnij swoją przestrzeń.</p>
+            <svg class="slider__scroll-down-arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="72" viewBox="0 0 48 72" fill="none">
+              <path d="M22.9395 71.5605L0.439487 49.0605C-0.146497 48.4746 -0.146497 47.5253 0.439487 46.9395C1.02547 46.3535 1.97469 46.3535 2.56053 46.9395L22.5 66.879L22.5 1.50005C22.5 0.670924 23.171 2.00504e-06 24.0001 2.07678e-06C24.8292 2.14853e-06 25.5001 0.670924 25.5001 1.50005L25.5001 66.879L45.4395 46.9395C46.0255 46.3535 46.9747 46.3535 47.5605 46.9395C47.8535 47.2324 48 47.6163 48 48.0001C48 48.3839 47.8535 48.7676 47.5605 49.0607L25.0605 71.5607C24.4747 72.1465 23.5255 72.1465 22.9395 71.5605Z" fill="black"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
     
