@@ -11,9 +11,10 @@
 }
 
 .burger-btn {
-  position: sticky;
+  position: fixed;
   top:5px;
   left:5px;
+  z-index: 3;
 }
 
 .close-btn {
@@ -25,10 +26,14 @@
 .header {
   position: fixed;
   inset: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   width: 235px;
   background: #FFF;
   overflow-y: auto;
+  z-index: 4;
   transition: width .3s;
 
   &::-webkit-scrollbar {
@@ -50,7 +55,7 @@
     display: flex;
     flex-direction: column;
     width: max-content;
-    margin: 0 auto 8.75rem auto;
+    margin: 0 auto 8rem auto;
   }
 
   &__item {
@@ -103,7 +108,7 @@
   gap:20px;
 
   &__icon {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &:hover path {
       transition: fill .3s;
       fill: #FF5F1F;
