@@ -260,7 +260,7 @@ input, select {
   z-index: 3;
 }
 .slider__text {
-  max-width: 1050px;
+  max-width: 90%;
   font-size: 2rem;
   line-height: 46px;
 }
