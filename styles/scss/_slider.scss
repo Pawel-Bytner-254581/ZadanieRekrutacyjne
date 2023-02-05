@@ -113,9 +113,8 @@
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
   .slider {
-    
     &__text-box {
       width: 100%;
       padding: 1rem;
@@ -133,6 +132,16 @@
     }
   }
 
+  .fixed-box {
+  
+
+    &__logo {
+     
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
   .fixed-box {
     display: flex;
     flex-direction: column;
