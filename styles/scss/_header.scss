@@ -3,17 +3,13 @@
   display: none;
   background: none;
   border: none;
-
-  &__icon {
-    width: 2rem;
-    height: 2rem;
-  }
 }
 
 .burger-btn {
   position: fixed;
-  top:1rem;
-  left:1rem;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
   z-index: 3;
 }
 
@@ -21,6 +17,7 @@
   position: absolute;
   top:0;
   right: 0;
+  width: 1.5rem;
 }
 
 .header {
@@ -151,6 +148,20 @@
     &__item {
       &:first-child {
         margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nav {
+    &__items {
+      margin: 0 auto 4rem auto;
+    }
+
+    &__item {
+      &:first-child {
+        margin-bottom: 2rem;
       }
     }
   }

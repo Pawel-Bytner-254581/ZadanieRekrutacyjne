@@ -112,16 +112,12 @@ input, select {
   background: none;
   border: none;
 }
-.burger-btn__icon,
-.close-btn__icon {
-  width: 2rem;
-  height: 2rem;
-}
 
 .burger-btn {
   position: fixed;
   top: 1rem;
   left: 1rem;
+  width: 2rem;
   z-index: 3;
 }
 
@@ -129,6 +125,7 @@ input, select {
   position: absolute;
   top: 0;
   right: 0;
+  width: 1.5rem;
 }
 
 .header {
@@ -233,6 +230,14 @@ input, select {
   }
   .nav__item:first-child {
     margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__items {
+    margin: 0 auto 4rem auto;
+  }
+  .nav__item:first-child {
+    margin-bottom: 2rem;
   }
 }
 .slider {
