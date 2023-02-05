@@ -105,7 +105,24 @@
       </div>
     </section>
     
-    <section class="section contact"></section>
+    <section class="section contact">
+      <h2 class="contact__heading">Kontakt</h2>
+      <form class="contact__form">
+        <label for="name" class="contact__form-label">Imię i nazwisko *</label>
+        <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" required>
+
+        <label for="email" class="contact__form-label">Adres e-mail *</label>
+        <input type="text" id="email" name="email" class="contact__form-input" maxlength="150" required>
+
+        <label for="phone" class="contact__form-label">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+
+        <label for="msg" class="contact__form-label">Wiadomość:</label>
+        <textarea id="msg" name="msg" class="contact__form-textarea" maxlength="400"></textarea>
+        
+        <button type="submit" class="contact__form-btn">Wyślij</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__box-company">
