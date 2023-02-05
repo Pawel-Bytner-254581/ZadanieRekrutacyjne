@@ -106,7 +106,36 @@
 }
 
 @media screen and (max-width:992px) {
+  .slider {
+    &__text-box {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    &__scroll-down-arrow {
+      bottom:1rem;
+      right: 2rem;
+      width: 2rem;
+    }
+  }
+  
   .fixed-box {
+    &__heading {
+      max-width: 400px;
+      font-size: 2.5rem;
+      margin: 5rem 0 0 3.5rem;
+    }
+
+    &__logo {
+      width: 260px;
+      transform: unset;
+    }
+
     &__half-element {
       display: none;
     }
@@ -128,29 +157,51 @@
     &__scroll-down-arrow {
       width: 2rem;
       right: 1.5rem;
-      bottom: 1rem;
+      bottom: 0.5rem;
     }
   }
 
   .fixed-box {
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75%;
 
-    &__logo {
-     
+    &__heading {
+      margin: 6.25rem 0 0 3.5rem;
+      font-size: 2.5rem;
+    };
+
+    &__slider-dots {
+      gap: 1rem;
+    }
+
+    &__slider-dot {
+      width: 20px;
+      height: 20px;
     }
   }
 }
 
 @media screen and (max-width:576px) {
+  .slider {
+    &__text {
+      line-height: 1.5rem;
+    }
+  }
+
   .fixed-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 90%;
+    height: 75%;
+
+    &__heading {
+      max-width: 300px;
+      margin: 5rem 0 0 2rem;
+      font-size: 2rem;
+    };
 
     &__logo {
-      width: 320px;
-      margin: 0 auto;
+      width: 150px;
+      margin: 0 auto 0 0;
       transform: unset;
     }
   }
