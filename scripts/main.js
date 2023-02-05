@@ -1,4 +1,9 @@
 window.onload = function() {
+  /*
+  Nie wiem czy dobrze zrozumiałem, ale jeśli pomarańczowa ikonka miała się pojawiać przy
+  elemencie/linku w menu w zależności od tego na jakiej jesteśmy stronie, a nie przy efekcie
+  po najechaniu, to zostawiam poniższy kod, który za to odpowiada:
+
   //add orange arrow icon to element in menu depending on specific pages
   (()=>{
     let currentUrl = window.location.href;
@@ -8,6 +13,7 @@ window.onload = function() {
       }
     });
   })();
+  */
 
   //show / hide menu on mobile devices
   const getMobileBtn = document.querySelector('.burger-btn');
