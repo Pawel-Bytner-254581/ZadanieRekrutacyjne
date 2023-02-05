@@ -115,12 +115,10 @@
 
 @media screen and (max-width:576px) {
   .slider {
-    &__boxes{
-      padding: 1rem;
-    }
     
     &__text-box {
       width: 100%;
+      padding: 1rem;
     }
 
     &__text {
