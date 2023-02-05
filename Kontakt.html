@@ -115,52 +115,153 @@
           </svg>
           <span class="contact__heading-text">kontakt</span>
         </h2>
-        <form class="contact__form contact__form--shadow">
-          <label for="name" class="contact__form-label">Imię i nazwisko *</label>
-          <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" placeholder="Imię i nazwisko" required>
 
-          <label for="email" class="contact__form-label">Adres e-mail *</label>
-          <input type="text" id="email" name="email" class="contact__form-input" maxlength="150" placeholder="Adres email" required>
-          <p class="contact__form-error-info">
-            <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
-              <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 9.4V7" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 4.59998H7.006" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="contact__form-error-info-text">Wpisz poprawny adres email</span>
-          </p>
+        <div class="contact__form-box">
+          <form class="contact__form contact__form--shadow">
+            <label for="name" class="contact__form-label">Imię i nazwisko *</label>
+            <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" placeholder="Imię i nazwisko" required>
 
-          <label for="phone" class="contact__form-label">Numer telefonu:</label>
-          <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Numer telefonu">
-          <p class="contact__form-error-info">
-            <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
-              <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 9.4V7" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 4.59998H7.006" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="contact__form-error-info-text">Wpisz poprawny numer telefonu</span>
-          </p>
-          
-          <label for="msg" class="contact__form-label">Treść wiadomości:</label>
-          <div class="contact__form-textarea-word-limit-box">
-            <textarea id="msg" name="msg" class="contact__form-textarea" size="530" maxlength="400" placeholder="Wiadomość..."></textarea>
-            <span class="contact__form-textarea-word-limit-value"></span>
+            <label for="email" class="contact__form-label">Adres e-mail *</label>
+            <input type="email" id="email" name="email" class="contact__form-input" maxlength="150" placeholder="Adres email" required>
+            <p class="contact__form-error-info">
+              <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
+                <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 9.4V7" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 4.59998H7.006" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="contact__form-error-info-text">Wpisz poprawny adres email</span>
+            </p>
+
+            <label for="phone" class="contact__form-label">Numer telefonu</label>
+            <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Numer telefonu xxx xxx xxx">
+            <p class="contact__form-error-info">
+              <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
+                <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 9.4V7" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 4.59998H7.006" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="contact__form-error-info-text">Wpisz poprawny numer telefonu</span>
+            </p>
+            
+            <label for="msg" class="contact__form-label">Treść wiadomości</label>
+            <div class="contact__form-textarea-word-limit-box">
+              <textarea id="msg" name="msg" class="contact__form-textarea" size="530" maxlength="400" placeholder="Wiadomość..."></textarea>
+              <span class="contact__form-textarea-word-limit-value"></span>
+            </div>
+            
+            <label class="contact__form-label contact__form-label--flex contact__form-label--color" for="attachment">
+              <svg class="contact__form-label-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3987 5.81949L7.29882 11.9193C5.85788 13.3602 3.52166 13.3602 2.0807 11.9193C0.639767 10.4784 0.639767 8.14216 2.0807 6.70124L7.78199 1" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.84961 6.41138L9.92021 2.34082" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.2599 4.47874L5.55861 10.18C5.07829 10.6603 4.29952 10.6603 3.81922 10.18C3.3389 9.69967 3.3389 8.92094 3.81922 8.44062L5.84848 6.41136" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.91992 2.34079C10.8805 1.38018 12.438 1.38018 13.3987 2.34079H13.3987C14.3593 3.30139 14.3593 4.85889 13.3987 5.81952" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="contact__form-label-text">Dodaj załącznik</span>
+            </label>
+            <input type="file" id="attachment" name="attachment" class="contact__form-input contact__form-input--hidden" accept="image/*">
+            
+            <div class="contact__form-acceptance-box">
+              <input class="contact__form-checkbox" type="checkbox" id="acceptance" name="acceptance" checked>
+              <label class="contact__form-label contact__form-label--transparent-color" for="acceptance">
+                * Wyrażam zgodę na przetwarzanie moich danych osobowych przez PAWAS Biuro Projektów i Nadzoru Budowlanego Paweł Łabiak, w celu świadczenia usług w ramach serwisu oraz kontaktu za pomocą urządzeń końcowych telekomunikacyjnych związanego ze zgłoszeniem.
+              </label>
+            </div>
+            <button type="submit" class="contact__form-btn">Wyślij</button>
+          </form>
+          <div class="contact__info">
+            <a class="contact__info-link" href="mailto:biuro@budway.pl">
+              <svg style="min-width:40px;" xmlns="http://www.w3.org/2000/svg" width="47" height="33" viewBox="0 0 47 33" fill="none">
+                <path d="M1.33503 33C0.598299 33 0 32.4113 0 31.6858V1.31416C0 0.588657 0.598299 0 1.33503 0H45.6649C46.2488 0 46.7635 0.372999 46.9392 0.920372C47.1128 1.47005 46.906 2.06535 46.4283 2.39389L24.2634 17.58C23.8322 17.8707 23.2709 17.8927 22.8216 17.6308L8.55597 9.33392C7.92071 8.96612 7.70984 8.15892 8.08554 7.5359C8.46212 6.91116 9.28067 6.70416 9.91358 7.07225L23.4419 14.9399L41.4099 2.62831H2.66976V31.6858C2.66976 32.4113 2.07205 33 1.33503 33Z" fill="#50545B"/>
+              </svg>
+              <span>biuro@budway.pl</span>
+            </a>
+            <a class="contact__info-link" href="tel:+48697646254">
+              <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none">
+                <path d="M20.119 0.885742C9.02544 0.885742 0 9.91039 0 21.0071C0 25.3485 1.76393 29.2463 2.51968 30.7201C2.87342 31.4061 3.718 31.6785 4.40321 31.3253C5.09 30.9723 5.36022 30.1291 5.00727 29.4431C4.34142 28.1501 2.79705 24.7376 2.79705 21.0071C2.79705 11.4524 10.5682 3.68173 20.119 3.68173C29.6716 3.68173 37.4444 11.4524 37.4444 21.0071C37.4444 30.5581 29.6716 38.3285 20.119 38.3285C16.3835 38.3285 13.4149 37.0355 12.3128 36.4779C11.9866 36.3121 11.6056 36.2832 11.2574 36.397L2.45285 39.211C1.71753 39.4454 1.31128 40.2303 1.5449 40.9662C1.73715 41.5604 2.2858 41.9394 2.8766 41.9394C3.01847 41.9394 3.15981 41.9192 3.3038 41.8717L11.5777 39.2296C13.3069 40.0317 16.3554 41.1245 20.119 41.1245C31.2152 41.1245 40.2403 32.0996 40.2403 21.0071C40.2403 9.91039 31.2152 0.885742 20.119 0.885742Z" fill="#50545B"/>
+                <path d="M16.1533 17.574C15.5405 18.0447 15.4246 18.9206 15.8971 19.535C16.3668 20.1459 17.244 20.2637 17.8565 19.7909C18.285 19.4618 19.4226 18.5881 19.2564 17.0259C19.1537 16.0949 18.2461 14.8205 17.5041 13.9133C16.4174 12.5888 15.4975 11.8036 14.7731 11.583C14.0969 11.3711 13.4027 11.4042 12.7124 11.6824C11.29 12.2507 10.2861 13.192 9.80638 14.406C9.34285 15.5895 9.42744 16.9119 10.0538 18.2327C11.5099 21.3119 13.4605 23.9716 15.8468 26.1389C15.856 26.146 15.8664 26.1574 15.8751 26.1649C18.2959 28.3045 21.16 29.9544 24.3888 31.0655C25.0016 31.275 25.6028 31.38 26.1784 31.38C26.905 31.38 27.5929 31.2169 28.2184 30.8852C29.3717 30.2764 30.1979 29.1746 30.6061 27.696C30.8033 26.9784 30.7606 26.2866 30.4772 25.6411C30.1778 24.9432 29.2945 24.1159 27.8578 23.1814C26.8756 22.545 25.5089 21.7831 24.5688 21.7831H24.5667C23.0014 21.7903 22.256 23.0178 21.977 23.481C21.5777 24.1418 21.7872 25.0007 22.4496 25.4001C23.1077 25.8008 23.9672 25.5894 24.3665 24.9289C24.4787 24.7467 24.5484 24.6497 24.5946 24.5977C25.3816 24.8278 27.4937 26.2094 27.9259 26.7909C27.9331 26.8222 27.935 26.8678 27.9114 26.9548C27.7751 27.4531 27.4881 28.1094 26.9162 28.4135C26.3789 28.6962 25.7385 28.575 25.2973 28.4228C22.4239 27.4329 19.8822 25.9742 17.7398 24.0827C15.6184 22.1605 13.8818 19.7896 12.5782 17.0392C12.3786 16.616 12.1876 15.9941 12.4093 15.4296C12.6469 14.8266 13.2677 14.4694 13.7487 14.2777C13.8314 14.2453 13.8763 14.2395 13.9099 14.2453C14.5355 14.6112 16.14 16.5555 16.4561 17.3147C16.4103 17.3645 16.3222 17.4452 16.1533 17.574Z" fill="#50545B"/>
+              </svg>
+              <span>697 646 254</span>
+            </a>
+            <p class="contact__info-text">
+              <svg style="min-width:33px" xmlns="http://www.w3.org/2000/svg" width="34" height="48" viewBox="0 0 34 48" fill="none">
+                <mask id="path-1-inside-1_2_195" fill="white">
+                  <path d="M24.937 18.0082C24.937 13.4481 21.2274 9.73975 16.668 9.73975C12.1082 9.73975 8.39923 13.4481 8.39923 18.0082C8.39923 19.8367 9.0163 21.5137 10.0259 22.884L18.5758 39.2085C18.7881 39.6111 19.1982 39.8404 19.6247 39.8404C19.8093 39.8404 19.997 39.7976 20.1722 39.7067C20.749 39.4019 20.972 38.6886 20.6707 38.1103L14.261 25.8772C15.0275 26.1124 15.8251 26.2769 16.668 26.2769C21.2274 26.2766 24.937 22.567 24.937 18.0082ZM11.2031 20.0399C11.1785 19.994 11.137 19.9647 11.1078 19.9232C10.8996 19.3187 10.7615 18.6822 10.7615 18.0082C10.7615 14.7508 13.4109 12.1023 16.6676 12.1023C19.9241 12.1023 22.5741 14.7508 22.5741 18.0082C22.5741 21.2646 19.9238 23.9143 16.6676 23.9143C14.7797 23.9143 13.1147 23.007 12.0331 21.6225L11.2031 20.0399Z"/>
+                </mask>
+                <path d="M24.937 18.0082C24.937 13.4481 21.2274 9.73975 16.668 9.73975C12.1082 9.73975 8.39923 13.4481 8.39923 18.0082C8.39923 19.8367 9.0163 21.5137 10.0259 22.884L18.5758 39.2085C18.7881 39.6111 19.1982 39.8404 19.6247 39.8404C19.8093 39.8404 19.997 39.7976 20.1722 39.7067C20.749 39.4019 20.972 38.6886 20.6707 38.1103L14.261 25.8772C15.0275 26.1124 15.8251 26.2769 16.668 26.2769C21.2274 26.2766 24.937 22.567 24.937 18.0082ZM11.2031 20.0399C11.1785 19.994 11.137 19.9647 11.1078 19.9232C10.8996 19.3187 10.7615 18.6822 10.7615 18.0082C10.7615 14.7508 13.4109 12.1023 16.6676 12.1023C19.9241 12.1023 22.5741 14.7508 22.5741 18.0082C22.5741 21.2646 19.9238 23.9143 16.6676 23.9143C14.7797 23.9143 13.1147 23.007 12.0331 21.6225L11.2031 20.0399Z" fill="#50545B"/>
+                <path d="M10.0259 22.884L12.6834 21.4921L12.5771 21.2891L12.4411 21.1045L10.0259 22.884ZM18.5758 39.2085L15.9182 40.6004L15.9221 40.6079L18.5758 39.2085ZM20.1722 39.7067L21.5539 42.3696L21.5638 42.3645L21.5737 42.3592L20.1722 39.7067ZM20.6707 38.1103L23.3313 36.7242L23.328 36.7179L20.6707 38.1103ZM14.261 25.8772L15.1413 23.0092L8.26574 20.8989L11.6037 27.2695L14.261 25.8772ZM16.668 26.2769V29.2769H16.6682L16.668 26.2769ZM11.2031 20.0399L13.8599 18.6465L13.8545 18.6364L13.8491 18.6262L11.2031 20.0399ZM11.1078 19.9232L8.27131 20.9002L8.41002 21.3029L8.65533 21.6511L11.1078 19.9232ZM12.0331 21.6225L9.37626 23.0158L9.50213 23.2558L9.66897 23.4694L12.0331 21.6225ZM27.937 18.0082C27.937 11.7908 22.8838 6.73975 16.668 6.73975V12.7397C19.571 12.7397 21.937 15.1054 21.937 18.0082H27.937ZM16.668 6.73975C10.4516 6.73975 5.39923 11.791 5.39923 18.0082H11.3992C11.3992 15.1052 13.7649 12.7397 16.668 12.7397V6.73975ZM5.39923 18.0082C5.39923 20.5283 6.25277 22.8204 7.61059 24.6634L12.4411 21.1045C11.7798 20.2069 11.3992 19.1451 11.3992 18.0082H5.39923ZM7.3683 24.2759L15.9182 40.6004L21.2333 37.8166L12.6834 21.4921L7.3683 24.2759ZM15.9221 40.6079C16.6743 42.0341 18.1302 42.8404 19.6247 42.8404V36.8404C20.2661 36.8404 20.9019 37.188 21.2294 37.8091L15.9221 40.6079ZM19.6247 42.8404C20.2744 42.8404 20.938 42.6891 21.5539 42.3696L18.7906 37.0438C19.0561 36.906 19.3442 36.8404 19.6247 36.8404V42.8404ZM21.5737 42.3592C23.6068 41.285 24.3963 38.7686 23.3313 36.7242L18.0101 39.4963C17.5477 38.6086 17.8912 37.5189 18.7707 37.0542L21.5737 42.3592ZM23.328 36.7179L16.9184 24.4848L11.6037 27.2695L18.0134 39.5026L23.328 36.7179ZM13.3808 28.7451C14.326 29.0352 15.4328 29.2769 16.668 29.2769V23.2769C16.2174 23.2769 15.729 23.1896 15.1413 23.0092L13.3808 28.7451ZM16.6682 29.2769C22.8841 29.2765 27.937 24.224 27.937 18.0082H21.937C21.937 20.9099 19.5707 23.2767 16.6678 23.2769L16.6682 29.2769ZM13.8491 18.6262C13.7393 18.4207 13.6243 18.26 13.5338 18.1457C13.4475 18.0366 13.3713 17.9552 13.3458 17.9281C13.3391 17.9209 13.3153 17.8957 13.3262 17.9073C13.3272 17.9084 13.3408 17.9227 13.359 17.9429C13.3948 17.9826 13.4728 18.0712 13.5602 18.1953L8.65533 21.6511C8.75742 21.796 8.85154 21.9038 8.90413 21.9621C8.93068 21.9915 8.95283 22.0151 8.96244 22.0252C8.96508 22.028 8.96739 22.0305 8.96893 22.0321C8.96971 22.0329 8.97045 22.0337 8.97094 22.0342C8.97151 22.0348 8.97184 22.0352 8.97212 22.0355C8.97351 22.037 8.97159 22.0349 8.96858 22.0317C8.96023 22.0228 8.90084 21.9599 8.83009 21.8706C8.75517 21.776 8.65456 21.6361 8.55702 21.4535L13.8491 18.6262ZM13.9442 18.9462C13.8137 18.5674 13.7615 18.2673 13.7615 18.0082H7.7615C7.7615 19.097 7.9854 20.0701 8.27131 20.9002L13.9442 18.9462ZM13.7615 18.0082C13.7615 16.4081 15.0674 15.1023 16.6676 15.1023V9.10233C11.7545 9.10233 7.7615 13.0935 7.7615 18.0082H13.7615ZM16.6676 15.1023C18.2679 15.1023 19.5741 16.4084 19.5741 18.0082H25.5741C25.5741 13.0932 21.5802 9.10233 16.6676 9.10233V15.1023ZM19.5741 18.0082C19.5741 19.6074 18.2672 20.9143 16.6676 20.9143V26.9143C21.5803 26.9143 25.5741 22.9217 25.5741 18.0082H19.5741ZM16.6676 20.9143C15.7736 20.9143 14.955 20.4897 14.3971 19.7756L9.66897 23.4694C11.2743 25.5242 13.7857 26.9143 16.6676 26.9143V20.9143ZM14.6899 20.2291L13.8599 18.6465L8.54627 21.4332L9.37626 23.0158L14.6899 20.2291Z" fill="#50545B" mask="url(#path-1-inside-1_2_195)"/>
+                <path d="M32.6658 21.0287C32.8416 20.4585 32.9705 20.1402 33.0318 19.6641C33.2152 18.6749 33.3366 17.6849 33.3366 16.7067C33.3366 7.51523 25.8604 0.0390625 16.6686 0.0390625C7.47711 0.0390625 0 7.51523 0 16.7067C0 17.9786 0.160713 19.2703 0.468931 20.5532C0.703869 21.1045 0.547244 20.8007 0.703869 21.1045C4.02885 27.5563 13.8428 46.9935 13.8428 46.9935C14.0544 47.3977 14.4652 47.6285 14.891 47.6285C15.0756 47.6285 15.2628 47.5854 15.437 47.4933C16.0154 47.192 16.2387 46.4781 15.9374 45.9L3.00921 20.9403L2.87177 20.4421C2.53399 19.2118 2.36258 17.955 2.36258 16.7064C2.36258 8.81793 8.77918 2.40165 16.6683 2.40165C24.5558 2.40165 30.974 8.81793 30.974 16.7064C30.974 17.8619 30.9325 19.0608 30.5202 20.1654C29.4012 23.1598 24.7769 31.5896 24.7769 31.5896C24.4845 32.1727 24.7184 32.8816 25.3019 33.1753C25.4723 33.2615 25.6541 33.3014 25.8324 33.3014C26.263 33.3014 26.6816 33.063 26.8876 32.651L32.271 21.9417" fill="#50545B"/>
+              </svg>
+              <span>Wspólna 63, 52-258 Wrocław</span>
+            </p>
           </div>
-          
-          <label class="contact__form-label contact__form-label--flex contact__form-label--color" for="attachment">
-            <svg class="contact__form-label-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.3987 5.81949L7.29882 11.9193C5.85788 13.3602 3.52166 13.3602 2.0807 11.9193C0.639767 10.4784 0.639767 8.14216 2.0807 6.70124L7.78199 1" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5.84961 6.41138L9.92021 2.34082" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M11.2599 4.47874L5.55861 10.18C5.07829 10.6603 4.29952 10.6603 3.81922 10.18C3.3389 9.69967 3.3389 8.92094 3.81922 8.44062L5.84848 6.41136" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9.91992 2.34079C10.8805 1.38018 12.438 1.38018 13.3987 2.34079H13.3987C14.3593 3.30139 14.3593 4.85889 13.3987 5.81952" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="contact__form-label-text">Dodaj załącznik</span>
-          </label>
-          <input type="file" id="attachment" name="attachment" class="contact__form-input contact__form-input--hidden" accept="image/*">
-          
-          <button type="submit" class="contact__form-btn">Wyślij</button>
-        </form>
+        </div>
       </div>
+
+      <svg class="contact__floating-element-half" xmlns="http://www.w3.org/2000/svg" width="307" height="612" viewBox="0 0 307 612" fill="none">
+        <path d="M306.5 306C306.5 474.555 169.547 611.231 0.500027 611.5L0.500014 470.833C91.6001 470.564 165.37 396.87 165.37 306C165.37 215.13 91.6001 141.436 0.499986 141.167L0.499973 0.500427C169.547 0.769463 306.5 137.445 306.5 306Z" stroke="#9F9F9F"/>
+      </svg>
+
+      <svg class="contact__floating-element-grid" xmlns="http://www.w3.org/2000/svg" width="901" height="891" viewBox="0 0 901 891" fill="none">
+        <g opacity="0.8">
+          <line x1="205.25" y1="16.0256" x2="205.25" y2="875.181" stroke="url(#paint0_radial_2_76)" stroke-width="0.5"/>
+          <line x1="353.706" y1="16.0256" x2="353.706" y2="875.181" stroke="url(#paint1_radial_2_76)" stroke-width="0.5"/>
+          <line x1="371.512" y1="16.0256" x2="371.512" y2="875.181" stroke="url(#paint2_radial_2_76)" stroke-width="0.5"/>
+          <line x1="518.414" y1="16.0256" x2="518.414" y2="875.181" stroke="url(#paint3_radial_2_76)" stroke-width="0.5"/>
+          <line x1="536.22" y1="16.0256" x2="536.22" y2="875.181" stroke="url(#paint4_radial_2_76)" stroke-width="0.5"/>
+          <line x1="684.25" y1="-1.09278e-08" x2="684.25" y2="890.316" stroke="url(#paint5_radial_2_76)" stroke-width="0.5"/>
+          <line x1="890.316" y1="266.25" x2="-2.18557e-08" y2="266.25" stroke="url(#paint6_radial_2_76)" stroke-width="0.5"/>
+          <line x1="901" y1="477.46" x2="10.6838" y2="477.46" stroke="url(#paint7_radial_2_76)" stroke-width="0.5"/>
+          <line x1="901" y1="490.814" x2="10.6838" y2="490.814" stroke="url(#paint8_radial_2_76)" stroke-width="0.5"/>
+        </g>
+        <defs>
+          <radialGradient id="paint0_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(204.977 897.689) rotate(-89.9985) scale(901.778 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint1_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(353.433 897.689) rotate(-89.9985) scale(901.778 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint2_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(371.239 897.689) rotate(-89.9985) scale(901.778 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint3_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(518.141 897.689) rotate(-89.9985) scale(901.778 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint4_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(535.948 897.689) rotate(-89.9985) scale(901.778 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint5_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(683.977 913.641) rotate(-89.9986) scale(934.485 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint6_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-23.3249 265.977) scale(934.485 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint7_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-12.6412 477.187) scale(934.485 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint8_radial_2_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-12.6412 490.541) scale(934.485 844526)">
+          <stop stop-color="#9F9F9F" stop-opacity="0"/>
+          <stop offset="0.479167" stop-color="#9F9F9F"/>
+          <stop offset="1" stop-color="#9F9F9F" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+
     </section>
   </main>
   <footer class="footer">
