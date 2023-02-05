@@ -218,6 +218,10 @@ input, select {
   }
 }
 @media screen and (max-width: 992px) {
+  .burger-btn {
+    display: block;
+    z-index: 100;
+  }
   .burger-btn--active,
 .close-btn--active {
     display: block;
@@ -225,9 +229,6 @@ input, select {
   .burger-btn--hidden,
 .close-btn--hidden {
     display: none;
-  }
-  .burger-btn {
-    display: block;
   }
   .header {
     width: 0;
@@ -250,6 +251,7 @@ input, select {
 .slider {
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 .slider__boxes {
   display: flex;
@@ -450,8 +452,11 @@ input, select {
   }
 }
 .contact {
+  position: relative;
+  overflow-x: hidden;
   padding: 190px 100px 125px 50px;
   background: #F5F5F5;
+  z-index: 3;
 }
 .contact__heading {
   position: relative;
@@ -464,15 +469,45 @@ input, select {
   left: 0;
   transform: translate(5px, -130%);
 }
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+  width: 100%;
+  max-width: 610px;
+  padding: 65px 180px 65px 50px;
+  border: 1px solid #000;
+  border-left: none;
+  font-size: 2rem;
+}
+.contact__info-link, .contact__info-text {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #000;
+  word-break: break-word;
+}
+.contact__info-link {
+  transition: color 0.3s;
+}
+.contact__info-link:hover {
+  color: #FF5F1F;
+}
 .contact__form {
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 610px;
   padding: 40px;
   background: #FFF;
 }
 .contact__form--shadow {
   box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.3);
+}
+.contact__form-box {
+  display: flex;
+  align-items: center;
 }
 .contact__form-label {
   display: inline-block;
@@ -560,7 +595,38 @@ input, select {
 .contact__form-error-info--show {
   display: flex;
 }
+.contact__floating-element-grid, .contact__floating-element-half {
+  position: absolute;
+  z-index: -3;
+}
+.contact__floating-element-half {
+  height: 450px;
+  top: 10%;
+  right: 10%;
+}
+.contact__floating-element-grid {
+  top: -45%;
+  left: 15%;
+}
 
+@media screen and (max-width: 1400px) {
+  .contact {
+    padding: 150px 20px 75px 20px;
+  }
+  .contact__form-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact__info {
+    padding: 20px;
+    border-left: 1px solid;
+    border-top: none;
+  }
+  .contact__info-link, .contact__info-text {
+    gap: 15px;
+    font-size: 1.5rem;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;

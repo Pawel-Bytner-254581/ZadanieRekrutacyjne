@@ -130,6 +130,11 @@
 }
 
 @media screen and (max-width:992px) {
+  .burger-btn {
+    display: block;
+    z-index: 100;
+  }
+
   .burger-btn,
   .close-btn {
 
@@ -140,10 +145,6 @@
     &--hidden {
       display: none;
     }
-  }
-
-  .burger-btn {
-    display: block;
   }
 
   .header {
