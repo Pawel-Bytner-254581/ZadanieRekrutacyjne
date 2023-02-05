@@ -304,6 +304,7 @@ input, select {
   color: #FFF;
 }
 .fixed-box__logo {
+  height: auto;
   transform: translateY(-5.625rem);
 }
 .fixed-box__half-element {
@@ -343,5 +344,17 @@ input, select {
   }
   .fixed-box__half-element {
     display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fixed-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fixed-box__logo {
+    width: 320px;
+    margin: 0 auto;
+    transform: unset;
   }
 }/*# sourceMappingURL=style.css.map */
