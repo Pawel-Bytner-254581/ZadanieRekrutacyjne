@@ -343,7 +343,7 @@ input, select {
     display: none;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .slider__text-box {
     width: 100%;
     padding: 1rem;
@@ -357,6 +357,8 @@ input, select {
     right: 1.5rem;
     bottom: 1rem;
   }
+}
+@media screen and (max-width: 576px) {
   .fixed-box {
     display: flex;
     flex-direction: column;
