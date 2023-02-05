@@ -115,17 +115,26 @@
   }
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1600px) {
   .nav {
+    &__items {
+      margin: 0 auto 3rem auto;
+    }
+
     &__item {
       &:first-child {
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
       }
     }
   }
 }
 
 @media screen and (max-width:992px) {
+  .burger-btn {
+    display: block;
+    z-index: 100;
+  }
+
   .burger-btn,
   .close-btn {
 
@@ -136,10 +145,6 @@
     &--hidden {
       display: none;
     }
-  }
-
-  .burger-btn {
-    display: block;
   }
 
   .header {
