@@ -117,14 +117,18 @@ input, select {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  width: 2rem;
   z-index: 3;
+}
+.burger-btn__icon {
+  width: 2rem;
 }
 
 .close-btn {
   position: absolute;
   top: 0;
   right: 0;
+}
+.close-btn__icon {
   width: 1.5rem;
 }
 
