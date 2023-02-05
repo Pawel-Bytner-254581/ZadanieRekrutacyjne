@@ -106,19 +106,33 @@
     </section>
     
     <section class="section contact">
-      <h2 class="contact__heading">Kontakt</h2>
+      <h2 class="contact__heading">kontakt</h2>
       <form class="contact__form">
         <label for="name" class="contact__form-label">Imię i nazwisko *</label>
-        <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" required>
+        <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" placeholder="Imię i nazwisko" required>
 
         <label for="email" class="contact__form-label">Adres e-mail *</label>
-        <input type="text" id="email" name="email" class="contact__form-input" maxlength="150" required>
+        <input type="text" id="email" name="email" class="contact__form-input" maxlength="150" placeholder="adres email" required>
 
         <label for="phone" class="contact__form-label">Numer telefonu:</label>
-        <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
-
-        <label for="msg" class="contact__form-label">Wiadomość:</label>
-        <textarea id="msg" name="msg" class="contact__form-textarea" maxlength="400"></textarea>
+        <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="123-456-789">
+        
+        <label for="msg" class="contact__form-label">Treść wiadomości:</label>
+        <div class="contact__form-textarea-word-limit-box"></div>
+          <textarea id="msg" name="msg" class="contact__form-textarea" size="530" maxlength="400" placeholder="Treść wiadomości..."></textarea>
+          <span class="contact__form-textarea-word-limit-value"></span>
+        </div>
+         
+        <label class="contact__form-label contact__form-label--flex contact__form-label--color" for="attachment">
+          <svg class="contact__form-label-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3987 5.81949L7.29882 11.9193C5.85788 13.3602 3.52166 13.3602 2.0807 11.9193C0.639767 10.4784 0.639767 8.14216 2.0807 6.70124L7.78199 1" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.84961 6.41138L9.92021 2.34082" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.2599 4.47874L5.55861 10.18C5.07829 10.6603 4.29952 10.6603 3.81922 10.18C3.3389 9.69967 3.3389 8.92094 3.81922 8.44062L5.84848 6.41136" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.91992 2.34079C10.8805 1.38018 12.438 1.38018 13.3987 2.34079H13.3987C14.3593 3.30139 14.3593 4.85889 13.3987 5.81952" stroke="#FF5F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="contact__form-label-text">Dodaj załącznik</span>
+        </label>
+        <input type="file" id="attachment" name="attachment" class="contact__form-input contact__form-input--hidden" accept="image/*">
         
         <button type="submit" class="contact__form-btn">Wyślij</button>
       </form>
