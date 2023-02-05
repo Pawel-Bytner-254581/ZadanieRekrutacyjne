@@ -63,6 +63,7 @@
   }
 
   &__logo {
+    height: auto;
     transform: translateY(-5.625rem);
   }
 
@@ -114,6 +115,20 @@
   .fixed-box {
     &__half-element {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+  .fixed-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__logo {
+      width: 320px;
+      margin: 0 auto;
+      transform: unset;
     }
   }
 }
