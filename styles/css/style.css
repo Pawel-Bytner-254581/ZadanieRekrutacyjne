@@ -477,7 +477,7 @@ input, select {
   display: none;
 }
 .contact__form-textarea {
-  max-width: 530px;
+  min-width: 100%;
   min-height: 105px;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -489,11 +489,14 @@ input, select {
 }
 .contact__form-textarea-word-limit-box {
   position: relative;
+  max-width: 530px;
 }
 .contact__form-textarea-word-limit-value {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
+  font-size: 0.75rem;
+  opacity: 0.5;
 }
 .contact__form-btn {
   display: flex;
