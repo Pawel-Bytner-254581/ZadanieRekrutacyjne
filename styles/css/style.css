@@ -209,6 +209,11 @@ input, select {
   fill: #FF5F1F;
 }
 
+@media screen and (max-width: 1800px) {
+  .nav__item:first-child {
+    margin-bottom: 3rem;
+  }
+}
 @media screen and (max-width: 1600px) {
   .nav__items {
     margin: 0 auto 3rem auto;
@@ -527,6 +532,9 @@ input, select {
 .contact__form-label--color {
   color: #FF5F1F;
 }
+.contact__form-label--transparent-color {
+  color: rgba(0, 0, 0, 0.5);
+}
 .contact__form-label-icon {
   display: inline-block;
 }
@@ -565,6 +573,12 @@ input, select {
   right: 0;
   font-size: 0.75rem;
   opacity: 0.5;
+}
+.contact__form-acceptance-box {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-top: 2rem;
 }
 .contact__form-btn {
   display: flex;
@@ -609,6 +623,11 @@ input, select {
   left: 15%;
 }
 
+@media screen and (max-width: 1600px) {
+  .contact__info {
+    padding: 65px 25px 65px 50px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .contact {
     padding: 150px 20px 75px 20px;

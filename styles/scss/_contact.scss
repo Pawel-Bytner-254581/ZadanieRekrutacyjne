@@ -83,6 +83,10 @@
     &--color {
       color: #FF5F1F;
     }
+
+    &--transparent-color {
+      color: rgba(0, 0, 0, 0.5)
+    }
   }
 
   &__form-label-icon {
@@ -130,6 +134,13 @@
     opacity: 0.5;
   }
 
+  &__form-acceptance-box {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
   &__form-btn {
     display: flex;
     justify-content: center;
@@ -175,6 +186,14 @@
   &__floating-element-grid {
     top: -45%;
     left: 15%;
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .contact {
+    &__info {
+      padding: 65px 25px 65px 50px;
+    }
   }
 }
 
