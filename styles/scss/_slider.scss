@@ -105,6 +105,14 @@
   }
 }
 
+@media screen and (max-width:1200px) {
+  .fixed-box {
+    &__half-element {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width:992px) {
   .slider {
     &__text-box {
@@ -139,10 +147,6 @@
     &__logo {
       width: 260px;
       transform: unset;
-    }
-
-    &__half-element {
-      display: none;
     }
   }
 }

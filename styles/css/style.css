@@ -211,7 +211,7 @@ input, select {
 
 @media screen and (max-width: 1400px) {
   .nav__item:first-child {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -338,6 +338,11 @@ input, select {
     font-size: 4rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .fixed-box__half-element {
+    display: none;
+  }
+}
 @media screen and (max-width: 992px) {
   .slider__text-box {
     width: 100%;
@@ -366,9 +371,6 @@ input, select {
   .fixed-box__logo {
     width: 260px;
     transform: unset;
-  }
-  .fixed-box__half-element {
-    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -419,8 +421,15 @@ input, select {
   background: #F5F5F5;
 }
 .contact__heading {
+  position: relative;
   font-size: 5rem;
   transform: translateY(35%);
+}
+.contact__heading-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(5px, -130%);
 }
 .contact__form {
   display: flex;
@@ -428,6 +437,9 @@ input, select {
   max-width: 610px;
   padding: 40px;
   background: #FFF;
+}
+.contact__form--shadow {
+  box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.3);
 }
 .contact__form-label {
   display: inline-block;
@@ -468,6 +480,7 @@ input, select {
   max-width: 530px;
   min-height: 105px;
   margin-top: 10px;
+  padding-bottom: 10px;
   background: none;
   border: none;
   border-bottom: 1px solid #000;
@@ -496,6 +509,20 @@ input, select {
   color: #FFF;
   border: none;
   border-radius: 4px;
+}
+.contact__form-error-info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 5px;
+  margin-top: 5px;
+  color: #FF0033;
+}
+.contact__form-error-info--show {
+  display: flex;
 }
 
 .footer {
