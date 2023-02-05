@@ -140,12 +140,13 @@ input, select {
   height: 100%;
   width: 235px;
   background: #FFF;
-  overflow-y: auto;
+  overflow: auto;
   z-index: 4;
   transition: width 0.3s;
 }
 .header::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 .header::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -164,38 +165,33 @@ input, select {
   margin: 0 auto 8rem auto;
 }
 .nav__item {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   font-size: 2rem;
   margin: 2.5rem auto 0 0;
 }
 .nav__item:first-child {
   margin-bottom: 8rem;
 }
-.nav__item--current-page {
-  position: relative;
-}
-.nav__item--current-page::after {
+.nav__item::after {
   content: url("../../images/orange-left-arrow.svg");
   position: absolute;
   top: 20%;
   right: -28px;
+  display: none;
+}
+.nav__item:hover {
+  position: relative;
+}
+.nav__item:hover::after {
   display: inline-block;
 }
 .nav__link {
+  display: inline-block;
+  max-width: 160px;
+  word-break: break-word;
   color: #000;
-  transition: color 0.3s;
-}
-.nav__link:hover {
-  color: #FF5F1F;
 }
 .nav__home-icon {
   width: 45px;
-}
-.nav__home-icon:hover path {
-  transition: stroke 0.3s;
-  stroke: #FF5F1F;
 }
 
 .social {
@@ -264,7 +260,7 @@ input, select {
   z-index: 3;
 }
 .slider__text {
-  max-width: 1050px;
+  max-width: 90%;
   font-size: 2rem;
   line-height: 46px;
 }

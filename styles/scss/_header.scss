@@ -32,12 +32,13 @@
   height: 100%;
   width: 235px;
   background: #FFF;
-  overflow-y: auto;
+  overflow: auto;
   z-index: 4;
   transition: width .3s;
 
   &::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
   }
 
   &::-webkit-scrollbar-track {
@@ -59,7 +60,6 @@
   }
 
   &__item {
-    width: max-content;
     font-size: 2rem;
     margin: 2.5rem auto 0 0;
 
@@ -67,37 +67,33 @@
       margin-bottom: 8rem;
     }
 
-    &--current-page {
+    &::after {
+      content: url("../../images/orange-left-arrow.svg");
+      position: absolute;
+      top:20%;
+      right:-28px;
+      display: none;
+    }
+
+    &:hover {
       position: relative;
 
       &::after {
-        content: url("../../images/orange-left-arrow.svg");
-        position: absolute;
-        top:20%;
-        right:-28px;
         display: inline-block;
+
       }
     }
   }
 
   &__link {
+    display: inline-block;
+    max-width: 160px;
+    word-break: break-word;
     color: #000;
-    transition: color .3s;
-
-    &:hover {
-      color: #FF5F1F;
-    }
   }
 
   &__home-icon {
     width: 45px;
-    
-    &:hover {
-      path {
-        transition: stroke .3s;
-        stroke:#FF5F1F;
-      }
-    }
   }
 }
 
