@@ -64,7 +64,7 @@ window.onload = function() {
   function checkValidation() {
     if(inputEmail.value) {
       if (!inputEmail.checkValidity()) {
-        document.querySelector("input[type=email] + p").style.display = "block";
+        document.querySelector("input[type=email] + p").style.display = "flex";
       } else {
         document.querySelector("input[type=email] + p").style.display = "none";
       }
@@ -72,7 +72,7 @@ window.onload = function() {
     
     if(inputPhone.value) {
       if (!inputPhone.checkValidity()) {
-        document.querySelector("input[type=tel] + p").style.display = "block";
+        document.querySelector("input[type=tel] + p").style.display = "flex";
       } else {
         document.querySelector("input[type=tel] + p").style.display = "none";
       }

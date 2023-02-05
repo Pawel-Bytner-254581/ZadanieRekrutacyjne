@@ -594,6 +594,7 @@ input, select {
   color: #FFF;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .contact__form-error-info {
   display: none;
