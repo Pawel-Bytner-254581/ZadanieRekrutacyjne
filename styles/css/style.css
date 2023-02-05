@@ -339,18 +339,31 @@ input, select {
   }
 }
 @media screen and (max-width: 992px) {
-  .slider__text-box {
-    width: 100%;
-  }
   .fixed-box__half-element {
     display: none;
   }
 }
 @media screen and (max-width: 576px) {
+  .slider__boxes {
+    padding: 1rem;
+  }
+  .slider__text-box {
+    width: 100%;
+  }
+  .slider__text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .slider__scroll-down-arrow {
+    width: 2rem;
+    right: 1.5rem;
+    bottom: 1rem;
+  }
   .fixed-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 90%;
   }
   .fixed-box__logo {
     width: 320px;
