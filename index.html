@@ -122,7 +122,7 @@
             <input type="text" id="name" name="name" class="contact__form-input" maxlength="150" placeholder="Imię i nazwisko" required>
 
             <label for="email" class="contact__form-label">Adres e-mail *</label>
-            <input type="text" id="email" name="email" class="contact__form-input" maxlength="150" placeholder="Adres email" required>
+            <input type="email" id="email" name="email" class="contact__form-input" maxlength="150" placeholder="Adres email" required>
             <p class="contact__form-error-info">
               <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
                 <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
@@ -132,8 +132,8 @@
               <span class="contact__form-error-info-text">Wpisz poprawny adres email</span>
             </p>
 
-            <label for="phone" class="contact__form-label">Numer telefonu:</label>
-            <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Numer telefonu">
+            <label for="phone" class="contact__form-label">Numer telefonu</label>
+            <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Numer telefonu xxx xxx xxx">
             <p class="contact__form-error-info">
               <svg class="contact__form-error-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14" fill="none">
                 <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#FF0033" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,7 +143,7 @@
               <span class="contact__form-error-info-text">Wpisz poprawny numer telefonu</span>
             </p>
             
-            <label for="msg" class="contact__form-label">Treść wiadomości:</label>
+            <label for="msg" class="contact__form-label">Treść wiadomości</label>
             <div class="contact__form-textarea-word-limit-box">
               <textarea id="msg" name="msg" class="contact__form-textarea" size="530" maxlength="400" placeholder="Wiadomość..."></textarea>
               <span class="contact__form-textarea-word-limit-value"></span>
@@ -160,6 +160,12 @@
             </label>
             <input type="file" id="attachment" name="attachment" class="contact__form-input contact__form-input--hidden" accept="image/*">
             
+            <div class="contact__form-acceptance-box">
+              <input class="contact__form-checkbox" type="checkbox" id="acceptance" name="acceptance" checked>
+              <label class="contact__form-label contact__form-label--transparent-color" for="acceptance">
+                * Wyrażam zgodę na przetwarzanie moich danych osobowych przez PAWAS Biuro Projektów i Nadzoru Budowlanego Paweł Łabiak, w celu świadczenia usług w ramach serwisu oraz kontaktu za pomocą urządzeń końcowych telekomunikacyjnych związanego ze zgłoszeniem.
+              </label>
+            </div>
             <button type="submit" class="contact__form-btn">Wyślij</button>
           </form>
           <div class="contact__info">

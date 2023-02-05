@@ -51,4 +51,34 @@ window.onload = function() {
       }
     });
   });
+
+  //add red info alerts under specific form inputs
+  const contactForm = document.querySelector('.contact__form');
+  const inputEmail = document.querySelector("input[type=email]");
+  const inputPhone = document.querySelector("input[type=tel]");
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Wysłano ;), wyłączyłem wysyłanie w js.');
+  });
+
+  function checkValidation() {
+    if(inputEmail.value) {
+      if (!inputEmail.checkValidity()) {
+        document.querySelector("input[type=email] + p").style.display = "block";
+      } else {
+        document.querySelector("input[type=email] + p").style.display = "none";
+      }
+    }
+    
+    if(inputPhone.value) {
+      if (!inputPhone.checkValidity()) {
+        document.querySelector("input[type=tel] + p").style.display = "block";
+      } else {
+        document.querySelector("input[type=tel] + p").style.display = "none";
+      }
+    }
+  } 
+
+  inputEmail.addEventListener('change', checkValidation);
+  inputPhone.addEventListener('change', checkValidation);
 }
