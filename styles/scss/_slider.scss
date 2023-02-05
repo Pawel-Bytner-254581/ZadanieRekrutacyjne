@@ -125,10 +125,15 @@
   }
   
   .fixed-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    
     &__heading {
       max-width: 400px;
       font-size: 2.5rem;
-      margin: 5rem 0 0 3.5rem;
+      margin: 6.5rem 0 0 3.5rem;
     }
 
     &__logo {
@@ -162,15 +167,7 @@
   }
 
   .fixed-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 75%;
-
-    &__heading {
-      margin: 6.25rem 0 0 3.5rem;
-      font-size: 2.5rem;
-    };
 
     &__slider-dots {
       gap: 1rem;
