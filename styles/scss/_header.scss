@@ -155,3 +155,17 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .nav {
+    &__items {
+      margin: 0 auto 4rem auto;
+    }
+
+    &__item {
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

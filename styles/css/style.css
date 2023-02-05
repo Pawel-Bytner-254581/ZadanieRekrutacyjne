@@ -235,6 +235,14 @@ input, select {
     margin-bottom: 4rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .nav__items {
+    margin: 0 auto 4rem auto;
+  }
+  .nav__item:first-child {
+    margin-bottom: 2rem;
+  }
+}
 .slider {
   position: relative;
   overflow: hidden;
